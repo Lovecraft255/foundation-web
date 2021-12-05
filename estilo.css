@@ -137,7 +137,7 @@ body{
 
 .char-title{
 
-    font-family: romanica;
+    font-family: roman;
 
 }
 
@@ -217,5 +217,90 @@ body{
 .size-redes:hover{
 
     background-color: #c40105;
+
+}
+
+.add-coments{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 100px;
+    background-color: #535353;
+    border: #535353 2px solid;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.coment{
+
+    width: 580px;
+    height: 58px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: romanica;
+    margin-left: 10px;
+    background-color: #535353;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+
+}
+
+
+#btn-public{
+
+    display: block;
+    margin-top: 10px; 
+    font-family: romanica;
+    background-color: #2d2d2d;
+    color: white;
+    border: #2d2d2d solid 2px;
+    margin-left: 500px;
+    font-size: 14px;
+
+}
+
+#btn-public:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
+
+}
+
+.button-size{
+
+    width: 40px;
+    height: auto;
+
+}
+
+.bordes{
+
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #2d2d2d;
+    font-family: romanica;
+    width: 570px;
+    height: 110px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+
+#coments-content{
+
+    background-color: #535353;
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: scroll;
+    margin-top: 40px;
 
 }
