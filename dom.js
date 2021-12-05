@@ -13,7 +13,7 @@ function addComent( coment ){
 
     eliminateBtn.classList.add("fas");
     
-    eliminateBtn.classList.add("button-size");
+    eliminateBtn.classList.add("eliminate-size");
 
     const comentDiv = document.createElement("div");
 

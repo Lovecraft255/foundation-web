@@ -270,13 +270,6 @@ body{
 
 }
 
-.button-size{
-
-    width: 40px;
-    height: auto;
-
-}
-
 .bordes{
 
     border: #2d2d2d 1px solid;
@@ -294,13 +287,37 @@ body{
 
 #coments-content{
 
-    background-color: #535353;
-    width: 600px;
-    height: 200px;
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    overflow-y: scroll;
+    display: block;
     margin-top: 40px;
+    width: 600px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #535353 1px solid;
+    border-radius: 4px;
+    overflow-y: hidden;
+    background-color: #535353;
 
+}
+
+.eliminate-size{
+
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-top: 10px; 
+    font-family: romanica;
+    background-color: #535353;
+    color: white;
+    border: #535353 solid 2px;
+    margin-left: 500px;
+    font-size: 14px;
+
+
+}
+
+.eliminate-size:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
 }
