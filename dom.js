@@ -35,11 +35,11 @@ let comentsContent = document.getElementById("coments-content");
 
 let btnPost = document.getElementById("btn-public");
 
+console.log(comentsContent);
+
 comentsContent.addEventListener( "click" , (e) => {
 
     if( e.target.tagName == "BUTTON" ){
-
-        console.log( e.target.parentElement );
 
         const parent = e.target.parentElement;
 
@@ -48,14 +48,15 @@ comentsContent.addEventListener( "click" , (e) => {
         alert( "Se eliminaea el comentario" );
 
     } 
-})
+} );
+
 
 btnPost.addEventListener( "click" , () => {
 
     const coment = createComent();
 
     console.log(coment);
-
+                                                            
     addComent( coment );
 
 } );

@@ -321,3 +321,18 @@ body{
     background-color: #c40105;
     border: #c40105 solid 2px;
 }
+
+.ep1{
+
+    display: inline-block;
+    margin-left: 220px;
+    width: auto;
+    height: 240px;
+
+}
+
+#referencias{
+
+    display: none;
+
+}
