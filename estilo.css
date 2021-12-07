@@ -334,5 +334,145 @@ body{
 #referencias{
 
     display: none;
+    border-top: white 2px solid;
 
+}
+
+.content-title{
+
+    font-family: roman;
+    font-size: 12px;
+    display: inline-block;
+
+}
+
+.contenidos{
+
+    border: white solid 2px;
+    width: 170px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 10px;
+
+}
+
+#btn-mostrar{
+
+    display: inline-block;
+    background-color: #535353;
+    color: white;
+    border: #535353 solid 2px;
+    margin-left: 8px;
+
+}
+
+#btn-mostrar:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
+
+}
+
+.referencia{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+
+}
+
+.referencia:hover{
+
+    background-color: #535353;
+    
+}
+
+.episodes-info{
+
+    margin-top: 80px;
+    margin-left: 10px;
+
+}
+
+#sinopsis-title{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 160px;
+
+}
+
+.sinopsis-desc{
+
+    font-family: romanica;
+    color: white;
+    
+}
+
+#trama-title{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 140px;
+
+}
+
+.trama-desc{
+
+    font-family: romanica;
+    color: white;
+    width: 1000px;
+    
+}
+
+.sinopsis{
+
+    margin-bottom: 80px;
+    
+}
+
+.trama{
+
+    margin-bottom: 80px;
+
+}
+
+#cast-tile{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 100px;
+
+}
+
+.cast-desc{
+
+    font-family: romanica;
+    color: white;
+
+}
+
+.cast-link{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    display: block;
+    width: 120px;
+
+}
+
+.cast-link:hover{
+
+    background-color: #535353;
+    
 }
