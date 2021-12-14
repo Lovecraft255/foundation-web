@@ -476,3 +476,57 @@ body{
     background-color: #535353;
     
 }
+
+.info-desc{
+
+    font-family: romanica;
+    color: white;
+    width: 80%;
+
+}
+
+#info-title{
+
+    width: 35%;
+    font-family: roman;
+    border-bottom: white 2px solid;
+
+}
+
+#libro-title{
+
+    width: 50%;
+    font-family: roman;
+    border-bottom: white 2px solid;
+
+}
+
+.cap-link{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    display: block;
+    width: 20%;
+
+}
+
+.cap-link:hover{
+
+    background-color: #535353;
+    
+}
+
+#cap-tile{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 18%;
+
+}
+
+
