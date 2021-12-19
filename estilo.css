@@ -534,3 +534,94 @@ body{
     color: white;
 
 }
+
+#menu-desp{
+
+    display: none;
+    float: right;
+    
+}
+
+
+@media only screen and (max-width: 1080px) {
+   
+    .desplegable{
+
+        width: 100px;
+        display: none;
+
+    }
+
+    ul{
+
+        display: none;
+
+    }
+
+    .grupo-desplegable{
+
+        width: 100px; 
+        display: none;
+
+    }
+
+    #menu-desp{
+
+        font-size: 20px;
+        width: 40px;
+        margin-bottom: 10px;
+        margin-right: 8px;
+        display: block;
+        background-color: #535353;
+        border: #535353 solid 2px;
+        color: white;
+
+    }
+
+    #menu-desp:hover{
+
+        background-color: #c40105;
+        border: #c40105 solid 2px;
+    
+    }
+
+    .banner{
+
+        width: 650px;
+        height: 150px;
+
+    }
+
+    .trama-desc{
+
+        font-family: romanica;
+        color: white;
+        width: 800px;
+        
+    }
+
+    #info-title{
+
+        width: 54%;
+        font-family: roman;
+        border-bottom: white 2px solid;
+    
+    }
+
+    #libro-title{
+
+        width: 77%;
+        font-family: roman;
+        border-bottom: white 2px solid;
+    
+    }
+
+    #cap-tile{
+
+        font-family: roman;
+        border-bottom: white 2px solid;
+        width: 28%;
+    
+    }
+
+}
