@@ -333,7 +333,7 @@ body{
 
 #referencias{
 
-    display: none;
+    display: block;
     border-top: white 2px solid;
 
 }
