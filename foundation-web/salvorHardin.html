@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+     
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+
+    <div class="content">
+
+        <h1 class="slogan-2"> Salvor Hardin </h1>
+
+        <p class="desc-serie">
+    
+            Salvor Hardin es uno de los personajes principales de la serie Foundation de Apple TV +. Intuitivo, con una inteligencia de zorro, Salvor es el guardián protector de Terminus. Tiene una conexión misteriosa con la Bóveda, siendo la única persona en Terminus capaz de resistir los efectos del campo nulo. Salvor es interpretado por Leah Harvey, apareciendo por primera vez en el episodio "La paz del emperador".
+          
+        </p>
+
+        <img class="promo-1" src="imagenes/Salvor-Hardin.jpg" alt="Salvor Hardin">
+
+        <div class="contenidos" id="app">
+
+            <h4 class="content-title">Contenidos</h4> <button @click='boton' id="btn-mostrar"> Mostrar </button>
+            
+            <div v-show="mostrar">
+
+                <div id="referencias"><indice></indice></div>
+                
+            </div>
+
+        </div>    
+
+        <div class="episodes-info">
+
+            <div class="info-general">
+
+                <h1 id="info-title">Informacion general</h1>
+
+                <p class="info-desc">
+
+                    Salvor Hardin nació en Terminus de los colonos Mari y Abbas. Desde muy joven, Salvor mostró una conexión con la misteriosa Bóveda; a la edad de cuatro años, Salvor caminó hacia la Bóveda y se paró debajo de ella sin que el campo nulo la afectara. Su madre trató de arrastrarse detrás de ella y la llamó por su nombre, pero Salvor no podía entender por qué la Bóveda la estaba lastimando cuando no la afectaba. Salvor siempre creyó que la Bóveda la estaba llamando, casi como un amigo imaginario. Con el paso de los años, Salvor fue considerada un caso atípico del plan de Hari Seldon y no se unió a la Fundación, pero sucedió a su padre, Abbas, como Guardián de Terminus. Sus deberes consistían en brindar protección a la colonia.<br><br>
+                    Salvor rescata al joven colono Poly después de que intenta acercarse a la Bóveda, parte de un juego que juegan los niños de la colonia. Afectado por el campo nulo generado por el artefacto, Poly queda inconsciente y Salvor lo arrastra por la ladera de la montaña. Dándole comida para que se recupere, lo despide después de advertirle de la garra de un obispo en la zona. El amante de Salvor, Hugo, regresó a la colonia de una carrera comercial a bordo de su barco, el Mendigo. La conexión de Salvor con la Bóveda se manifestó más tarde como visiones de un niño con un cuchillo huyendo; seguir al chico llevó a Salvor a descubrir que una fuerza de Anacreontes había aterrizado en el planeta. Después de capturar a su líder, Phara Keaen, llevándola a la Bóveda y usando el campo nulo para dejarla inconsciente, Salvor tenía la intención de averiguar por qué los Anacreontes estaban en Terminus.<br><br>
+                    La captura e interrogatorio de Phara por parte de Salvor la puso en conflicto con el director de la Fundación, Lewis Pirenne. A pesar de sus mejores esfuerzos, los Anacreonte lograron rodear la ciudad de Terminus y finalmente tomaron el control del asentamiento. Salvor fue hecho prisionero por los Anacreontes, pero fue rescatado por Poly y Gia. Junto a Hugo y su padre, Salvor llevó la lucha a los Anacreontes atacando sus corbetas desembarcadas.<br><br>
+                    Poco después del ataque a las corbetas Anacreonte, las fuerzas de Anacreonte se apoderan de Terminus City y sus ciudadanos. Salvor y otros selectos de la Fundación se ven obligados a unirse a Phara y algunas de las fuerzas de Anacreon en una misión para abordar el Invictus. Hugo hace que Phara deba mantenerlos con vida a él y a Salvor, esclavizando el barco a Salvor.<br><br>
+                    Para abordar el Invictus, Salvor tiene que saltar con los rehenes y las fuerzas de Anacreon en trajes espaciales hasta el casco de la nave. Entran en el barco pero sufren bajas. Durante su paso por el barco, Salvor ayuda al grupo a atravesar puertas y puertas. Salvor puede abrir la puerta del puente donde agarra un arma y dispara a las fuerzas de Anacreonte, lo que les da tiempo a ella y a Lewis para llegar al otro lado de la puerta, separándolos de los Anacreontes. Salvor y Lewis desarrollan un plan para navegar por la nave antes de su próximo salto, pero Phara y Rowan pueden anular las puertas e interrumpir esto. Mientras lo hacen, el Invictus salta.<br><br>
+                    Salvor se despierta mientras el barco está en el salto y ve visiones de lo que sucedió. Una vez finalizado el salto, Salvor se despierta de nuevo y evalúa la situación, encontrando a los Anacreontes inconscientes y Lewis habiendo llevado a cabo su plan. Lewis condujo la nave de regreso a la terminal, y Salvor intenta contactar a Terminus sin respuesta. Ella cree que el campo nulo puede estar involucrado. El salto arrastró a otras naves cercanas con ellos, incluido el Beggar y la nave de Thespis, y Salvor salta al espacio hacia el Beggar. Mientras está allí, se reencuentra con Hugo, quien intenta convencerla de que se vaya con él y deje todo esto atrás. Ella dice que tiene que terminar esto y verlo a través de lo cual Hugo accede a regañadientes.<br><br>
+                    En Terminus, Salvor puede desactivar el campo nulo, despertando así a muchos ciudadanos de la Fundación, y también a los soldados Anacreonte. Existe un enfrentamiento entre los miembros de la Fundación, Anacreontes y los ciudadanos de Thespis.<br><br>
+
+                </p>
+
+            </div>
+
+            <div class="libro">
+
+                <h1 id="libro-title">De los libros de la fundacion</h1>
+
+                <p class="trama-desc">
+                    
+                    Salvor Hardin es considerado uno de los mayores alcaldes que jamás haya gobernado el planeta Terminus. Durante cinco mandatos como alcalde, Hardin era conocido por su hábil manejo de los asuntos exteriores. Hardin nació en Terminus y cuando fue elegido para el cargo de alcalde descubrió que su papel era constantemente socavado por el Patronato de la Fundación. Hardin hace campaña por la representación de la ciudad en las reuniones de la Junta de Fideicomisarios y finalmente se le permite asistir.<br><br>
+                    Hardin llega a conocer el verdadero propósito de Terminus como los intentos de Hari Seldon de preservar la ciencia y la civilización frente a un Imperio Galáctico que se desmorona. Superando en maniobras a la Junta, Hardin asume el papel de jefe de estado de la Fundación y Terminus. Hardin y su asesor, Yohan Lee, crean una nueva religión, el cientifismo, que considera sagrados los sucesos científicos. Hardin usa el cientificismo para subyugar los reinos interplanetarios cercanos que han caído en la barbarie para aumentar el poder y el alcance de la Fundación.<br><br>
+
+                </p>
+
+            </div>
+
+            <div class="cap">
+
+                <h1 id="cap-tile">Apariciones</h1>
+
+                <p class="cast-desc">
+
+                    <a class="cap-link" href="ep1.html">La paz del emperador</a>
+                    <a class="cap-link" href="ep3.html">El fantasma matematico</a>
+                    <a class="cap-link" href="ep4.html">Barbaros en la puerta</a>
+                    <a class="cap-link" href="ep5.html">Al despertar</a>
+                    <a class="cap-link" href="ep6.html">La muerte y la dama</a>
+                    <a class="cap-link" href="ep7.html">Misterios y martires </a>
+                    <a class="cap-link" href="ep8.html">La pieza perdida</a>
+                    <a class="cap-link" href="ep9.html">La primera pieza</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script src="indice.js"></script>
+    
+    <script src="menu.js"></script>
+
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'indice' , {
+
+            template:'<ul><li><div class="referencia"><a class="referencia" href="#info-title">Informacion general</a></div></li><li><div class="referencia"><a class="referencia" href="#libro-title">De los libros de la fundacion</a></li><li></div><div class="referencia"><a class="referencia" href="#cap-tile">Apariciones</a></div></li></ul>'
+
+        } );
+
+        var referencias = new Vue({
+
+            el:'#referencias'
+
+        });
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                mostrar: true,
+            },
+            methods: {
+                boton: function () {
+                    if(this.mostrar == true)
+                        this.mostrar = false
+                    else
+                        this.mostrar = true
+                }
+
+            },
+    })
+
+
+    </script>
+     
+    
+</body>
+</html>

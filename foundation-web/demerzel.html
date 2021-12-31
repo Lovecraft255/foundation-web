@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+     
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+    
+    <div class="content">
+
+        <h1 class="slogan-2"> Demerzel </h1>
+
+        <p class="desc-serie">
+    
+            Demerzel es uno de los personajes principales de la serie Foundation de Apple TV +. Demerzel es el enigmático "robot inteligente" y ayudante leal del Emperador de la Galaxia. Paciente y vigilante, Demerzel es la última de su especie y ha guiado a la dinastía Cleonic durante siglos. Ella es interpretada por Laura Birn, apareciendo por primera vez en el episodio "La paz del emperador".
+          
+        </p>
+
+        <img class="promo-1" src="imagenes/Eto-Demerzel.jpg" alt="Demerzel">
+
+        <div class="contenidos" id="app">
+
+            <h4 class="content-title">Contenidos</h4> <button @click='boton' id="btn-mostrar"> Mostrar </button>
+            
+            <div v-show="mostrar">
+
+                <div id="referencias"><indice></indice></div>
+                
+            </div>
+
+        </div>    
+
+        <div class="episodes-info">
+
+            <div class="info-general">
+
+                <h1 id="info-title">Informacion general</h1>
+
+                <p class="info-desc">
+
+                    Demerzel se desempeña como asistente y asesor del gobernante Cleons del Imperio Galáctico. Fue asistente de Cleon I, el primer emperador de la dinastía genética, y fue ferozmente leal a él y al Imperio. Demerzel supervisó la gestación y los nacimientos de los clones, y asumió un papel similar al de guardián y mentor de los Cleon cuando eran Hermano Dawn. Entre los otros deberes de Demerzel estaba ayudar al hermano Dusk con su ascensión cuando llegara el momento. Demerzel es una devota Luminista, y alrededor de 1.102 Era Imperial tuvo la oportunidad de caminar por La Espiral de la Doncella, hasta llegar al Vientre de la Madre.<br><br>
+                    Durante el reinado de Cleon XII, ella, junto con el actual Hermano Dawn, saluda a las delegaciones de Anacreonte y Thespis a Trantor, y las conduce a través del Mural de las Almas. Demerzel explica su importancia para las delegaciones antes de llevarlas ante Empire. Tras el bombardeo del Puente Estelar, Demerzel condujo a las tropas imperiales al planeta enano Aethra, capturando e interrogando al biohacker Jiam Quarver, quien suministró a los bombarderos explosivos de nanocalas.<br><br>
+                    Tras la muerte de Proxima Opal, Demerzel acompañó a Cleon XIII a la Doncella, donde lo ayudó a informarle sobre los principios y la estructura religiosa actual del luminismo. El Emperador notó que Demerzel era una Luminista ella misma, a lo que ella confirmó, señalando que aunque sus instintos estaban codificados, aún podía creer en algo más grande que ella misma. Aunque apoyó los esfuerzos del Imperio para instalar a Zephyr Gilat, quien seguiría invocando el Nuevo Octavo que no predicaba contra los clones, no pudo evitar inclinarse cuando Zephyr Halima, que deseaba invocar al Octavo Primario, pronunció un conmovedor discurso en Opal's. funeral que indicó cierto nivel de disgusto por el Imperio.<br><br>
+                    Poco antes de dejar a la Doncella después de que Cleon XIII completara su propio peregrinaje en La Espiral, Demerzel le reveló su propia experiencia en La Espiral a Zephyr Halima y que había sido bendecida con una visión.<br><br>
+
+                </p>
+
+            </div>
+
+            <div class="libro">
+
+                <h1 id="libro-title">De los libros de la fundacion</h1>
+
+                <p class="trama-desc">
+                    
+                    Eto Demerzel era el alter ego del robot R. Daneel Olivaw. Demerzel se desempeñó como Primer Ministro del Emperador Cleon I durante los eventos descritos en La Fundación. Demerzel usó su posición para manipular eventos, como asegurarse de que Hari Seldon continuara desarrollando la psicohistoria.<br><br>
+                    En la serie Foundation original de Isaac Asimov, Eto Demerzel estaba presente como hombre. El género del personaje se cambió a femenino para la serie Foundation.<br><br>
+
+                </p>
+
+            </div>
+
+            <div class="cap">
+
+                <h1 id="cap-tile">Apariciones</h1>
+
+                <p class="cast-desc">
+
+                    <a class="cap-link" href="ep1.html">La paz del emperador</a>
+                    <a class="cap-link" href="ep2.html">Preparado para vivir</a>
+                    <a class="cap-link" href="ep3.html">El fantasma matematico</a>
+                    <a class="cap-link" href="ep4.html">Barbaros en la puerta</a>
+                    <a class="cap-link" href="ep6.html">La muerte y la dama</a>
+                    <a class="cap-link" href="ep7.html">Misterios y martires </a>
+                    <a class="cap-link" href="ep8.html">La pieza perdida</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script src="indice.js"></script>
+    
+    <script src="menu.js"></script>
+
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'indice' , {
+
+            template:'<ul><li><div class="referencia"><a class="referencia" href="#info-title">Informacion general</a></div></li><li><div class="referencia"><a class="referencia" href="#libro-title">De los libros de la fundacion</a></li><li></div><div class="referencia"><a class="referencia" href="#cap-tile">Apariciones</a></div></li></ul>'
+
+        } );
+
+        var referencias = new Vue({
+        
+            el:'#referencias'
+        
+        });
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                mostrar: true,
+            },
+            methods: {
+                boton: function () {
+                    if(this.mostrar == true)
+                        this.mostrar = false
+                    else
+                        this.mostrar = true
+                }
+
+            },
+    })
+
+    </script>
+
+</body>
+</html>

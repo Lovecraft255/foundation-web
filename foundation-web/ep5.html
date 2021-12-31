@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+     
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+    
+    <div class="content">
+
+        <h1 class="slogan-2"> Al despertar </h1>
+
+        <p class="desc-serie">
+    
+            Upon Awakening es el quinto episodio de la primera temporada de Foundation en Apple TV +. Se emitió el 15 de octubre de 2021. El episodio fue escrito por Leigh Dana Jackson basado en las novelas de Isaac Asimov.<br><br>  
+            Alex Graves dirigió el episodio.<br><br>
+          
+        </p>
+
+        <img class="ep1" src="imagenes/Foundation_Ep5.jpg" alt="Imagen episodio 1">
+
+        <div class="contenidos" id="app">
+
+            <h4 class="content-title">Contenidos</h4> <button @click='boton' id="btn-mostrar"> Mostrar </button>
+            
+            <div v-show="mostrar">
+
+                <div id="referencias"><indice></indice></div>
+                
+            </div>
+
+        </div>
+
+        <div class="episodes-info">
+
+            <div class="sinopsis">
+
+                <h1 id="sinopsis-title">Sinopsis</h1>
+
+                <p class="sinopsis-desc">
+
+                    Un flashback revela el origen del conflicto de Gaal entre la fe y la ciencia. El enfrentamiento en Terminus da un giro desafortunado.
+
+                </p>
+
+            </div>
+
+            <div class="trama">
+
+                <h1 id="trama-title">Trama</h1>
+
+                <p class="trama-desc">
+                    En Synnax, el acólito Gaal Dornick de la Iglesia Seer tiene la tarea de investigar la actividad prohibida en la universidad por Seer Dominie. Junto con otros dos Acólitos, descubre al Instructor Arren Sorn que intenta rescatar libros y material educativo. Ella le ruega que se vaya, sabiendo que lo ejecutarán si lo descubren, pero él se niega y, en cambio, intenta recordarle a Gaal que aprender no debe ser herético. Tomada por la Iglesia, Sorn es ejecutada ahogándose. Esa noche, Gaal se sumerge en el cuerpo de Sorn y recupera el Libro de plegado de Kalle con el que fue enterrado.<br><br>
+                    A pesar de sus protestas de lealtad a la Iglesia Vidente, Gaal reconoce la verdad en algo que dijo Sorn; que los sinnaxianos fueron los responsables de minar los respiraderos volcánicos del planeta y hacer que los mares se elevaran. Gaal usa el trabajo de Kalle para resolver la Conjetura de Abraxas y gana una competencia de matemáticas imperial establecida por Hari Seldon. Ante el arresto por sus acciones, Gaal se va a Trantor.<br><br>
+                    La cápsula de escape de Gaal, lanzada desde la Liberación después de que Raych mató a Hari, finalmente es recogida por otro barco, The Raven. Al salir de la suspensión criogénica, Gaal se entera de que ha estado en crio durante casi treinta y cinco años. Ella comienza a explorar la nave y se entera de los eventos de los últimos treinta y cinco años, incluido el destino de Raych.<br><br>
+                    En Terminus, el enfrentamiento entre los colonos y los Anacreontes llega a un punto crítico cuando llega la nave imperial Aegis, comandada por Kray Dorwin. A pesar de las advertencias de Salvor, Lewis Pirenne ordena que Phara Keaen se traslade a la Torre de la Fundación para que el comandante imperial, Kray Dorwin, pueda hablar con ella. En la Foundation Tower, Phara activa un disruptor de campo que golpea el escudo que protege Terminus City.<br><br>
+                    Los Anacreontes lanzan su asalto a la colonia, lo que lleva a un enfrentamiento entre Salvor y Phara. A medida que avanza la batalla, el Aegis desciende para ayudar solo para ser objetivo de un arma anti-orbital Anacreon.<br><br>
+                    En The Raven, Gaal se da cuenta de que el destino del barco es Helicon. Mientras intenta que la nave cambie de rumbo, ella ve a Hari, aparentemente muriendo en el suelo.<br><br>
+                </p>
+
+            </div>
+
+            <div class="cast">
+
+                <h1 id="cast-tile">Cast</h1>
+
+                <p class="cast-desc">
+
+                    
+                    <a class="cast-link"  href="louLlobell.html">Lou Llobell</a>
+                    <a class="cast-link" href="jaredHarris.html">Jared Harris</a>
+                    <a class="cast-link" href="leaHearvey.html">Leah Harvey</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script src="indice.js"></script>
+    
+    <script src="menu.js"></script>
+
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'indice' , {
+
+            template:'<ul><li><div class="referencia"> <a class="referencia" href="#sinopsis-title">Sinopsis</a></div></li><li><div class="referencia"><a class="referencia" href="#trama-title">Trama</a></div></li><li><div class="referencia"><a class="referencia" href="#cast-tile">Cast</a></div></li></ul>'
+
+        } );
+
+        var referencias = new Vue({
+        
+            el:'#referencias'
+        
+        });
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                mostrar: true,
+            },
+            methods: {
+                boton: function () {
+                    if(this.mostrar == true)
+                    this.mostrar = false
+                else
+                    this.mostrar = true
+            }
+        
+        },
+        });
+
+
+    </script>
+    
+</body>
+</html>

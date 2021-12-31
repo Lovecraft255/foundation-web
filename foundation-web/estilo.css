@@ -1,0 +1,627 @@
+@font-face {
+    font-family: romanica;
+    src: url(fonts/Romanica.ttf);
+}
+
+@font-face {
+    font-family: roman;
+    src: url(fonts/Roman\ SD.ttf);
+  }
+
+ul {            /* MENU PARTE PRINCIPAL */
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d2d2d;
+    font-family: romanica;
+}
+
+li {            /* ELEMENTOS DEL MENU */
+    float: left;
+}
+
+li a, .curso { 
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: romanica;
+}
+
+li a:hover, .desplegable:hover .curso { 
+    background-color: #c40105;
+}
+
+li.desplegable {    /* MOSTRAR ELEMENTOS DEL MENU DE FORMA INLINE ES DECIR EN UNA LINEA */
+    display: inline-block;
+    font-family: romanica;
+}
+
+.grupo-desplegable {    /* PROPIEDADES DEL MENU QUE SE ABRE */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: romanica;
+}
+
+.grupo-desplegable a { /* PORPIEDADES DEL MENU QUE SE ABRE SOBRE HIPERVINCULO */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: romanica;
+}
+
+.grupo-desplegable a:hover {background-color: #f1f1f1} /* CAMBIO DE COLOR AL HACER HOVER SOBRE EL HIPERVINCULO (li) DEL MENU DESPLEGABLE */
+
+.desplegable:hover .grupo-desplegable { 
+    display: block;
+}
+
+.content{
+
+    margin-top: 40px;
+    background-color: #2d2d2d;
+    color: white;
+
+}
+
+.slogan-1{
+
+    font-family: roman;
+    margin-left: 50px;
+    font-size: 20px;
+
+}
+
+.slogan-2{
+
+    font-family: roman;
+    margin-left: 50px;
+    font-size: 40px;
+
+}
+
+.promo-1{
+
+    display: inline-block;
+    margin-left: 220px;
+    width: 240px;
+    height: auto;
+
+}
+
+.desc-serie{
+
+    font-family: romanica;
+    display: inline-block;
+    width: 420px;
+    font-size: 16px;
+    margin-left: 180px;
+
+}
+
+body{
+
+    background-color: #2d2d2d;
+    color: white;
+
+}
+
+.personajes{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.chars-title{
+
+    font-family: roman;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.char-image{
+
+    width: 180px;
+    height: 240px;
+
+}
+
+.char-title{
+
+    font-family: roman;
+
+}
+
+.char{
+
+    border: white 2px solid;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.trailer{
+
+    margin-top: 80px;
+    font-family: roman;
+    text-align: center;
+
+}
+
+.title-trailer{
+
+    margin-bottom: 20px;
+
+}
+
+.banner{
+
+    width: 970px;
+    height: 300px;
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+.footer{
+
+    margin-top: 80px;
+    padding: 20px;
+
+}
+
+.redes{
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.redes-title{
+
+    font-family: roman;
+    color: white;
+
+}
+
+.size-redes{
+
+    width: 50px;
+    font-size: 50px;
+    height: auto;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.creditos{
+
+    font-family: roman;
+    color: white;
+
+}
+
+.size-redes:hover{
+
+    background-color: #c40105;
+
+}
+
+.add-coments{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 100px;
+    background-color: #535353;
+    border: #535353 2px solid;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.coment{
+
+    width: 580px;
+    height: 58px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: romanica;
+    margin-left: 10px;
+    background-color: #535353;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+
+}
+
+
+#btn-public{
+
+    display: block;
+    margin-top: 10px; 
+    font-family: romanica;
+    background-color: #2d2d2d;
+    color: white;
+    border: #2d2d2d solid 2px;
+    margin-left: 500px;
+    font-size: 14px;
+
+}
+
+#btn-public:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
+
+}
+
+.bordes{
+
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #2d2d2d;
+    font-family: romanica;
+    width: 570px;
+    height: 110px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+
+#coments-content{
+
+    display: block;
+    margin-top: 40px;
+    width: 600px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #535353 1px solid;
+    border-radius: 4px;
+    overflow-y: hidden;
+    background-color: #535353;
+
+}
+
+.eliminate-size{
+
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-top: 10px; 
+    font-family: romanica;
+    background-color: #535353;
+    color: white;
+    border: #535353 solid 2px;
+    margin-left: 500px;
+    font-size: 14px;
+
+
+}
+
+.eliminate-size:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
+}
+
+.ep1{
+
+    display: inline-block;
+    margin-left: 220px;
+    width: auto;
+    height: 240px;
+
+}
+
+#referencias{
+
+    display: block;
+    border-top: white 2px solid;
+
+}
+
+.content-title{
+
+    font-family: roman;
+    font-size: 12px;
+    display: inline-block;
+
+}
+
+.contenidos{
+
+    border: white solid 2px;
+    width: 170px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 10px;
+
+}
+
+#btn-mostrar{
+
+    display: inline-block;
+    background-color: #535353;
+    color: white;
+    border: #535353 solid 2px;
+    margin-left: 8px;
+
+}
+
+#btn-mostrar:hover{
+
+    background-color: #c40105;
+    border: #c40105 solid 2px;
+
+}
+
+.referencia{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+
+}
+
+.referencia:hover{
+
+    background-color: #535353;
+    
+}
+
+.episodes-info{
+
+    margin-top: 80px;
+    margin-left: 10px;
+
+}
+
+#sinopsis-title{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 160px;
+
+}
+
+.sinopsis-desc{
+
+    font-family: romanica;
+    color: white;
+    
+}
+
+#trama-title{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 140px;
+
+}
+
+.trama-desc{
+
+    font-family: romanica;
+    color: white;
+    width: 1000px;
+    
+}
+
+.sinopsis{
+
+    margin-bottom: 80px;
+    
+}
+
+.trama{
+
+    margin-bottom: 80px;
+
+}
+
+#cast-tile{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 100px;
+
+}
+
+.cast-desc{
+
+    font-family: romanica;
+    color: white;
+
+}
+
+.cast-link{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    display: block;
+    width: 120px;
+
+}
+
+.cast-link:hover{
+
+    background-color: #535353;
+    
+}
+
+.info-desc{
+
+    font-family: romanica;
+    color: white;
+    width: 80%;
+
+}
+
+#info-title{
+
+    width: 35%;
+    font-family: roman;
+    border-bottom: white 2px solid;
+
+}
+
+#libro-title{
+
+    width: 50%;
+    font-family: roman;
+    border-bottom: white 2px solid;
+
+}
+
+.cap-link{
+
+    color: white;
+    font-family: romanica;
+    font-size: 16px;
+    margin-top: 8px;
+    border: #2d2d2d 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    display: block;
+    width: 20%;
+
+}
+
+.cap-link:hover{
+
+    background-color: #535353;
+    
+}
+
+#cap-tile{
+
+    font-family: roman;
+    border-bottom: white 2px solid;
+    width: 18%;
+
+}
+
+.color-icon{
+
+    color: white;
+
+}
+
+#menu-desp{
+
+    display: none;
+    float: right;
+    
+}
+
+
+@media only screen and (max-width: 1080px) {
+   
+    .desplegable{
+
+        width: 100px;
+        display: none;
+
+    }
+
+    ul{
+
+        display: none;
+
+    }
+
+    .grupo-desplegable{
+
+        width: 100px; 
+        display: none;
+
+    }
+
+    #menu-desp{
+
+        font-size: 20px;
+        width: 40px;
+        margin-bottom: 10px;
+        margin-right: 8px;
+        display: block;
+        background-color: #535353;
+        border: #535353 solid 2px;
+        color: white;
+
+    }
+
+    #menu-desp:hover{
+
+        background-color: #c40105;
+        border: #c40105 solid 2px;
+    
+    }
+
+    .banner{
+
+        width: 650px;
+        height: 150px;
+
+    }
+
+    .trama-desc{
+
+        font-family: romanica;
+        color: white;
+        width: 800px;
+        
+    }
+
+    #info-title{
+
+        width: 54%;
+        font-family: roman;
+        border-bottom: white 2px solid;
+    
+    }
+
+    #libro-title{
+
+        width: 77%;
+        font-family: roman;
+        border-bottom: white 2px solid;
+    
+    }
+
+    #cap-tile{
+
+        font-family: roman;
+        border-bottom: white 2px solid;
+        width: 28%;
+    
+    }
+
+}

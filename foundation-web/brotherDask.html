@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+      
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+    
+    <div class="content">
+
+        <h1 class="slogan-2"> Brother Dask </h1>
+
+        <p class="desc-serie">
+    
+            Brother Dusk es uno de los personajes principales de la serie Foundation de Apple TV +. El hermano Dusk es el miembro vivo más antiguo de la dinastía genética gobernante del Imperio Galáctico. Como emperador retirado, no se arrepiente, es obstinado y no debe ser subestimado. El hermano Dusk es interpretado por Terrence Mann, apareciendo por primera vez en el episodio "La paz del emperador".
+          
+        </p>
+
+        <img class="promo-1" src="imagenes/Brother-Dusk.jpg" alt="Brother Dusk">
+
+        <div class="contenidos" id="app">
+
+            <h4 class="content-title">Contenidos</h4> <button @click='boton' id="btn-mostrar"> Mostrar </button>
+            
+            <div v-show="mostrar">
+
+                <div id="referencias"><indice></indice></div>
+                
+            </div>
+
+        </div>
+
+        <div class="episodes-info">
+
+            <div class="info-general">
+
+                <h1 id="info-title">Informacion general</h1>
+
+                <p class="info-desc">
+
+                    El Hermano Dusk es el Emperador retirado del Imperio Galáctico, que actúa como consejero y mentor de sus "hermanos", el actual Emperador Brother Day, y el Emperador ascendente, el Hermano Dawn. Una de las funciones que lleva a cabo el hermano Dusk es trabajar en el Mural de las Almas y ampliar su legado.<br><br>
+                    Cleon XI ocupó el cargo de Hermano Dusk durante los eventos que rodearon el tribunal de Hari Seldon por alta traición y conspiración para desestabilizar el Imperio Galáctico. Dusk es un defensor de matar a Seldon y sus seguidores después de la revelación de que la psicohistoria ha predicho la caída del Imperio dentro de cinco siglos. Cuando el Puente de las Estrellas fue destruido por terroristas, y Hari fue llevado ante el Imperio directamente, recomendó que poner fin a la clonación imperial podría ralentizar la caída unos pocos siglos más. Dusk reaccionó airadamente a su declaración y salió furioso. En los meses posteriores a la caída del Puente Estelar y la creación de Scar, Dusk visitó las ruinas y habló con el Sacerdote Vidente Trantoriano que se había interesado en Gaal Dornick. Quería saber si Gaal realmente era un Vidente y podía ver la caída del Imperio.<br><br>
+                    Treinta y cinco años después del bombardeo del Star Bridge, el hermano Dusk se acercaba al final de su vida y se preparaba para su ascensión. Mientras lo hacía, se convirtió en el hermano Darkness y su posición fue tomada por el anterior Brother Day, Cleon XII. En la ceremonia, el nuevo Hermano Dawn lloró, haciendo que Darkness creyera que algo andaba mal con el niño. Sin embargo, Demerzel lo guió a la ascensión antes de que pudiera preocuparse más por ello.<br><br>
+                    Cleon XII se convirtió en Hermano Dusk tras la ascensión del Dusk anterior, Cleon XI. Como el Cleon que había presidido la crisis de Hari Seldon, el bombardeo del Puente de las Estrellas y los posteriores ataques a Anacreonte y Thespis, el actual Brother Day consideró que había dejado al Imperio en una confusión a través de acciones impulsivas. Desde su mandato, la insurgencia se ha fermentado en la propia Trantor, así como en otras crisis. El hermano Dusk había planeado viajar para asistir al funeral de Proxima Opal y ayudar a instalar a su sucesor preferido, Zephyr Gilat, para ser el nuevo líder del luminismo. Sin embargo, Day lo anuló y le pidió que se quedara en Trantor para solucionar las crisis en las que había participado.<br><br>
+
+                </p>
+
+            </div>
+
+    
+
+            <div class="cap">
+
+                <h1 id="cap-tile">Apariciones</h1>
+
+                <p class="cast-desc">
+
+                    <a class="cap-link" href="ep1.html">La paz del emperador</a>
+                    <a class="cap-link"  href="ep5.html">Al despertar</a>
+                    <a class="cap-link"  href="ep2.html">Preparado para vivir</a>
+                    <a class="cap-link"  href="ep6.html">La muerte y la dama</a>
+                    <a class="cap-link"  href="ep7.html">Misterios y martires </a>
+                    <a class="cap-link"  href="ep8.html">La pieza perdida</a>
+                    <a class="cap-link"  href="ep9.html">La primera pieza</a>
+                    <a class="cap-link"  href="ep10.html">El salto</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script src="indice.js"></script>
+    
+    <script src="menu.js"></script>   
+    
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'indice' , {
+
+            template:'<ul><li><div class="referencia"><a class="referencia" href="#info-title">Informacion general</a></div></li><li><div class="referencia"><a class="referencia" href="#libro-title">De los libros de la fundacion</a></li><li></div><div class="referencia"><a class="referencia" href="#cap-tile">Apariciones</a></div></li></ul>'
+
+        } );
+
+        var referencias = new Vue({
+
+            el:'#referencias'
+
+        });
+
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                mostrar: true,
+            },
+            methods: {
+                boton: function () {
+                    if(this.mostrar == true)
+                        this.mostrar = false
+                    else
+                        this.mostrar = true
+                }
+
+            },
+    })
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+     
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+    
+    <div class="content">
+
+        <div class="info-serie">
+
+            <h4 class="slogan-1"> No puedes salvarte a ti mismo </h4>
+
+            <h1 class="slogan-2"> PERO PUEDE SALVAR TU LEGADO </h1>
+    
+            <p class="desc-serie">
+    
+                Basada en las galardonadas novelas de Isaac Asimov, Foundation narra una banda de exiliados en su monumental viaje para salvar a la humanidad y reconstruir la civilización en medio de la caída del Imperio Galáctico. <br><br>
+                Cuando la mente más grande de la galaxia, Hari Seldon, predice el colapso del Imperio, él y un pequeño grupo de seguidores se aventuran a los confines de la galaxia para establecer La Fundación y deben defenderla mientras las crisis amenazan con destruir todo lo que han construido.<br><br>
+    
+                Mientras tanto, temiendo que su dominio de la galaxia se esté debilitando, los Cleons gobernantes, una larga lista de clones emperadores, pronto se encuentran en curso de colisión con la Fundación.<br><br>
+    
+                Foundation ahora se transmite exclusivamente en Apple TV +
+    
+            </p>
+    
+            <img class="promo-1" src="imagenes/funadacion cartel.jfif" alt="Imagen promocinal">
+
+        </div>
+
+        <div class="personajes">
+ 
+            <h2 class="chars-title"> Personajes  de Foundation </h2>
+
+            <div class="char"> 
+                
+                <img class="char-image" src="imagenes/Hari-Seldon.jpg" alt="Hari Seldon"> 
+
+                <h4 class="char-title"> Hari Seldon </h4>
+            
+            </div>
+
+            <div class="char"> 
+                
+                <img class="char-image" src="imagenes/Gaal-Dornick.jpg" alt="Gaal Dornick"> 
+
+                <h4 class="char-title"> Gaal Dornick </h4>
+            
+            </div>
+
+            <div class="char"> 
+                
+                <img class="char-image" src="imagenes/Salvor-Hardin.jpg" alt="Salvor Hardin"> 
+
+                <h4 class="char-title"> Salvor Hardin </h4>
+            
+            </div>
+
+            <div class="char"> 
+                
+                <img class="char-image" src="imagenes/Eto-Demerzel.jpg" alt="Eto Demerzel"> 
+
+                <h4 class="char-title"> Eto Demerzel </h4>
+            
+            </div>
+
+            <div>
+
+                <div class="char"> 
+                
+                    <img class="char-image" src="imagenes/Brother-Dawn.jpg" alt="Brother Dawn"> 
+    
+                    <h4 class="char-title">Brother Dawn</h4>
+                
+                </div>
+    
+                <div class="char"> 
+                    
+                    <img class="char-image" src="imagenes/Brother-Day.jpg" alt="Brother Day"> 
+    
+                    <h4 class="char-title"> Brother Day </h4>
+                
+                </div>
+    
+                <div class="char"> 
+                    
+                    <img class="char-image" src="imagenes/Brother-Dusk.jpg" alt="Brother Dusk"> 
+    
+                    <h4 class="char-title"> Brother Dusk </h4>
+                
+                </div>
+
+
+
+            </div>
+
+
+    
+        </div>
+
+        <div class="trailer">
+
+            <h1 class="title-trailer"> Trailer Foundation </h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GADGpd_MO6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+    <script src="menu.js"></script>
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+
+    </script>
+    
+</body>
+</html>

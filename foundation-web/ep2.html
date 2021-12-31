@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header">       
+     
+        <button id="menu-desp"><i class="fas fa-bars"></i></button>
+        
+        <div id="desp-menu"><guide></guide></div>
+
+    </div>
+    
+    <div class="content">
+
+        <h1 class="slogan-2"> Preparado para vivir </h1>
+
+        <p class="desc-serie">
+    
+            Preparándose para vivir es el segundo episodio de la primera temporada de Foundation en Apple TV +. Se emitió el 24 de septiembre de 2021 junto con el primer episodio, "La paz del emperador".<br><br>  
+            El episodio fue escrito por Josh Friedman y David S. Goyer basado en las novelas de Isaac Asimov. Andrew Bernstein dirigió el episodio ".<br><br>
+          
+        </p>
+
+        <img class="ep1" src="imagenes/Foundation_Ep2.jpg" alt="Imagen episodio 1">
+
+        <div class="contenidos" id="app">
+
+            <h4 class="content-title">Contenidos</h4> <button @click='boton' id="btn-mostrar"> Mostrar </button>
+            
+            <div v-show="mostrar">
+
+                <div id="referencias"><indice></indice></div>
+                
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="episodes-info">
+
+            <div class="sinopsis">
+
+                <h1 id="sinopsis-title">Sinopsis</h1>
+
+                <p class="sinopsis-desc">
+
+                    La Fundación hace el largo viaje a Terminus a medida que Gaal y Raych se acercan. El Imperio se enfrenta a una difícil decisión.
+
+                </p>
+
+            </div>
+
+            <div class="trama">
+
+                <h1 id="trama-title">Trama</h1>
+
+                <p class="trama-desc">
+                    Las fuerzas imperiales bajo la dirección de Demerzel asaltan una instalación ilegal de biohackeo en el planeta enano Aethra en busca de información sobre los explosivos de nano-encaje utilizados por los terroristas que destruyeron el Puente Estelar. A pesar de los mejores esfuerzos de Demerzel, los verdaderos arquitectos del ataque siguen sin ser descubiertos.<br><br>
+                    Una nave lenta lleva a Hari Seldon y su Fundación a través del espacio, con destino a Terminus. A su velocidad actual, se necesitarán cuatro años y cuatro meses para llegar al planeta, lo que permitirá a la Fundación tener tiempo para prepararse y planificar la vida y la supervivencia en Terminus. Los simuladores de entrenamiento resultan en fallas y las proyecciones de muerte del personal de la Fundación después de asentarse Terminus son altas.<br><br>
+                    Los representantes de Anacreonte y Thespis continúan negando cualquier participación en el bombardeo del Star Bridge, a pesar de la evidencia de que los bombarderos eran de esos mundos. A Jerril le cuesta creer que los dos planetas cooperarían en una empresa como esta, dado que históricamente se odian más que al Imperio.<br><br>
+                    Como miembro principal de la dinastía genética, el hermano Dusk trabaja en el Mural de las almas. Se tambalea mientras sube por una escalera y ve que su mano empieza a temblar. Enojado, Dusk saca su frustración en la pintura y la escalera antes de irse furioso. Demerzel acompaña a Dusk a Scar, donde la atadura del Star Bridge se estrelló contra Trantor. Dusk viaja hacia la destrucción y se encuentra con un sacerdote de la Iglesia Vidente, preguntándose si Gaal es un verdadero Vidente que predice la caída del Imperio.<br><br>
+                    A bordo del lento barco, los miembros de la Fundación continúan preparándose para vivir en Terminus. Gaal asume más responsabilidad en la Fundación, lidiando con problemas personales y asistiendo a una reunión de asignación de presupuesto de la Fundación en lugar de Hari. Gaal y Raych se han acercado a lo largo del tiempo a bordo, desarrollando una relación romántica. Hari admite que no esperaba ser exiliado como parte de su plan.<br><br>
+                    En una demostración de fuerza, Brother Day ordena bombardear a Anacreonte y Thespis. En una ceremonia en Trantor, se transmiten imágenes de los ataques mientras ejecuta a miembros de las delegaciones diplomáticas. Solo a los embajadores se les permite vivir, para informar a los supervivientes de sus mundos de que no pudieron salvarlos.<br><br>
+                    A bordo del lento barco, Gaal siente que algo anda mal y comienza a buscar a Raych solo para descubrir que ha apuñalado a Hari. Cuando los sistemas de la nave detectan que las señales de vida de Hari han cesado, Raych agarra a Gaal y corre hacia las cápsulas de escape con ella, expulsándola y el arma utilizada para matar a Hari, en el espacio.<br><br>
+
+                </p>
+
+            </div>
+
+            <div class="cast">
+
+                <h1 id="cast-tile">Cast</h1>
+
+                <p class="cast-desc">
+
+                    <a class="cast-link" href="jaredHarris.html">Jared Harris </a>
+                    <a class="cast-link"  href="leePace.html">Lee Pace</a>
+                    <a class="cast-link"  href="louLlobell.html">Lou Llobell</a>
+                    <a class="cast-link"  href="lauraBirn.html">Laura Birn</a>
+                    <a class="cast-link"  href="terrenceMann.html">Terrence Mann </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="banner">
+
+            <banner></banner>
+
+        </div>
+
+        <div class="redes">
+
+            <h3 class="redes-title"> Redes de la serie </h3>
+            <instagram></instagram>
+            <twitter></twitter>
+            <youtube></youtube>
+            <facebook></facebook>
+
+        </div>
+
+        <div class="creditos">
+
+            <h6>Pagina realizada por Lovecraft255</h6>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e941f9ef21.js" crossorigin="anonymous"></script>
+
+    <script src="indice.js"></script>
+    
+    <script src="menu.js"></script>
+
+    <script>
+
+        Vue.component( 'guide' , { 
+                
+            template:'<ul id="desp-menu"><li class="desplegable"><a href="#" class="curso">Explorar</a><div class="grupo-desplegable"><a href="index.html">Pagina principal</a><a href="comunidad.html">Comunidad</a></div></li><li class="desplegable"><a href="#" class="curso">Episodios</a><div class="grupo-desplegable"><a href="ep1.html">"La paz del emperador"</a><a href="ep2.html">"Preparado para vivir"</a><a href="ep3.html">"El fantasma matematico"</a><a href="ep4.html">"Barbaros en la puerta"</a><a href="ep5.html">"Al despertar"</a><a href="ep6.html">"La muerte y la dama"</a><a href="ep7.html">"Misterios y martirios"</a><a href="ep8.html">"La pieza perdida"</a><a href="ep9.html">"La primera crisis"</a><a href="ep10.html">"El salto"</a ></div></li><li class="desplegable"><a href="#" class="curso">Personajes</a><div class="grupo-desplegable"><a href="hariSeldon.html">Hari Seldon</a><a href="brotherDay.html">Brother Day</a><a href="brotherDawn.html">Brother Dawn</a><a href="brotherDask.html">Brother Dask</a><a href="gaalDornik.html">Gaal Dornik</a><a href="salvorHardin.html">Salvor Hardin</a><a href="demerzel.html">Demerzel</a></div></li><li class="desplegable"><a href="#" class="curso">Cast</a><div class="grupo-desplegable"><a href="jaredHarris.html">Jared Harris</a><a href="leePace.html">Lee Pace</a><a href="cassianBilton.html">Casssian Bilton</a><a href="terrenceMann.html">Terrence Mann</a><a href="louLlobell.html">Lou Llobell</a><a href="leaHearvey.html">Leah Harvey</a><a href="lauraBirn.html">Laura Birn</a></div></li></ul>' 
+        
+        } );
+
+        var header = new Vue( { 
+
+            el:'.header'
+        
+        } ); 
+
+        Vue.component( 'banner' , {
+
+            template:'<img class="banner" src="imagenes/banner.jfif" alt="">'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.banner'
+
+        });
+
+        Vue.component( 'instagram' , {
+
+            template:'<a href="https://www.instagram.com/tv.foundation/"><i class="fab color-icon fa-instagram size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+
+            el:'.redes'
+
+        });
+
+        Vue.component( 'twitter' , {
+
+            template:'<a href="https://twitter.com/Foundation_"><i class="fab color-icon fa-twitter size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'youtube' , {
+
+            template:'<a href="https://www.youtube.com/watch?v=X4QYV5GTz7c"><i class="fab color-icon fa-youtube size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+        Vue.component( 'facebook' , {
+
+            template:'<a href="https://www.facebook.com/appletv/"><i class="fab color-icon fa-facebook-f size-redes"></i></a>'
+
+        } );
+
+        var banner = new Vue({
+        
+            el:'.redes'
+        
+        });
+
+            Vue.component( 'indice' , {
+
+            template:'<ul><li><div class="referencia"><a class="referencia" href="#sinopsis-title">Sinopsis</a></div></li><li><div class="referencia"><a class="referencia" href="#trama-title">Trama</a></div></li><li><div class="referencia"><a class="referencia" href="#cast-tile">Cast</a></div></li></ul>'
+
+        } );
+
+        var referencias = new Vue({
+        
+            el:'#referencias'
+        
+        });
+
+        let app = new Vue({
+            el: '#app',
+            data: {
+                mostrar: true,
+            },
+            methods: {
+                boton: function () {
+                    if(this.mostrar == true)
+                    this.mostrar = false
+                else
+                    this.mostrar = true
+            }
+        
+        },
+        });
+
+
+
+    </script>
+
+</body>
+</html>
